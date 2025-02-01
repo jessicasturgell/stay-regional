@@ -4,14 +4,25 @@
   text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 .map-resources-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+}
+
+.resources-container {
+  width: 500px;
+}
+
+.resource-card {
+  background-color: lavender;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.map-container {
+  margin: 1rem;
 }

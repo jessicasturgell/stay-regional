@@ -18,7 +18,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="resources">
+        <div className="resources-container">
           <Resources selectedState={selectedState} />
         </div>
       </div>
