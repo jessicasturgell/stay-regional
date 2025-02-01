@@ -1,0 +1,28 @@
+.map-text {
+  font-family: Arial-BoldMT, Arial;
+  font-size: 10px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.map-text-isolate {
+  isolation: isolate;
+}
+
+.map-unselected {
+  fill: lavender;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1px;
+}
+
+.map-unselected:hover {
+  fill: rgb(141, 141, 192);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1px;
+}
+
+.map-selected {
+  fill: rgb(141, 141, 192);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1px;
+}
