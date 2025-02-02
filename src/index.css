@@ -28,6 +28,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: rgb(141, 141, 192);
+  color: rgb(63, 63, 104);
 }
 
 h1 {
