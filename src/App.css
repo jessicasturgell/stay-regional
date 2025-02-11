@@ -31,3 +31,7 @@
 .map-container {
   margin: 1rem;
 }
+
+.resource-desc {
+  text-align: justify;
+}

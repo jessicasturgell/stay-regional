@@ -2,22 +2,24 @@ export const NCResources = () => {
   const resources = [
     {
       id: 1,
-      name: "STAY Member Support Fund",
+      name: "Campaign for Southern Equality",
       description:
-        "Members can request up to $200 to support with projects that align with STAY's core mission and beliefs.",
-      url: "https://www.thestayproject.net/member-support-fund",
+        "The Campaign for Southern Equality is working to build a South where LGBTQ+ people are equal in every part of life. They do the Trans Youth Emergency Project helps families of transgender youth across 25 states navigate cruel bans on gender-affirming care. It is the largest national program of its kind, offering custom 1-on-1 logistical and financial support so families can identify out-of-state healthcare options and pay for the cost of getting there.",
+      url: "https://southernequality.org/",
     },
     {
       id: 2,
-      name: "Something",
-      description: "Something something goes here for North Carolina.",
-      url: "https://www.thestayproject.net/member-support-fund",
+      name: "Rednecks Rising Media",
+      description:
+        "Anarchist abolitionist Appalachians. Healing, storytelling, organizing in WNC.",
+      url: "https://www.instagram.com/rednecksrising/?hl=en",
     },
     {
       id: 3,
-      name: "Something else",
-      description: "Something else goes here.",
-      url: "https://www.thestayproject.net/member-support-fund",
+      name: "Youth Outright",
+      description:
+        "Youth OUTright engages in intersectional and intergenerational dialogue with a focus on gender and racial justice. Our work includes programming for youth ages 11-24, training for youth-serving organizations, and advocacy for policies that protect Queer and Trans youth.",
+      url: "https://www.youthoutright.org/",
     },
   ];
   return (
@@ -27,7 +29,7 @@ export const NCResources = () => {
           <a href={r.url}>
             <h2>{r.name}</h2>
           </a>
-          <span>{r.description}</span>
+          <p className="resource-desc">{r.description}</p>
         </div>
       ))}
     </>

@@ -2,22 +2,24 @@ export const TNResources = () => {
   const resources = [
     {
       id: 1,
-      name: "STAY Member Support Fund",
+      name: "ETN Harm Reduction",
       description:
-        "Members can request up to $200 to support with projects that align with STAY's core mission and beliefs.",
-      url: "https://www.thestayproject.net/member-support-fund",
+        "East Tennessee Harm Reduction & Recovery Housing is a non-profit organization that was created in 2022 so that people struggling with addiction and mental health have access to the resources needed to gain the freedom of the chains that’s been weighing them down.",
+      url: "https://www.instagram.com/easttnharmredux/?hl=en",
     },
     {
       id: 2,
-      name: "Something",
-      description: "Something something goes here for Tennessee.",
-      url: "https://www.thestayproject.net/member-support-fund",
+      name: "Hellbender Harm Reduction",
+      description:
+        "Hellbender Harm Reduction improves wellbeing and builds solidarity in Tennessee by providing harm reduction supplies and advancing policies that support people who use drugs.",
+      url: "https://www.hellbenderharmreduction.org/",
     },
     {
       id: 3,
-      name: "Something else",
-      description: "Something else goes here.",
-      url: "https://www.thestayproject.net/member-support-fund",
+      name: "Tri-Cities Mutual Aid",
+      description:
+        "A grassroots coalition of people and groups who care about everyone getting the resources they need.",
+      url: "https://www.instagram.com/tricitiesmutualaid/?hl=en",
     },
   ];
   return (
@@ -27,7 +29,7 @@ export const TNResources = () => {
           <a href={r.url}>
             <h2>{r.name}</h2>
           </a>
-          <span>{r.description}</span>
+          <p className="resource-desc">{r.description}</p>
         </div>
       ))}
     </>

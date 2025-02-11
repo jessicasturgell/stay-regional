@@ -2,22 +2,10 @@ export const KYResources = () => {
   const resources = [
     {
       id: 1,
-      name: "STAY Member Support Fund",
+      name: "EKY Mutual Aid",
       description:
-        "Members can request up to $200 to support with projects that align with STAY's core mission and beliefs.",
-      url: "https://www.thestayproject.net/member-support-fund",
-    },
-    {
-      id: 2,
-      name: "Something",
-      description: "Something something goes here for Kentucky.",
-      url: "https://www.thestayproject.net/member-support-fund",
-    },
-    {
-      id: 3,
-      name: "Something else",
-      description: "Something else goes here.",
-      url: "https://www.thestayproject.net/member-support-fund",
+        "An Appalachian community coming together to care for itself. we’re all we’ve got!",
+      url: "https://www.instagram.com/hillbillieshelpinghillbillies/",
     },
   ];
   return (
@@ -27,7 +15,7 @@ export const KYResources = () => {
           <a href={r.url}>
             <h2>{r.name}</h2>
           </a>
-          <span>{r.description}</span>
+          <p className="resource-desc">{r.description}</p>
         </div>
       ))}
     </>
