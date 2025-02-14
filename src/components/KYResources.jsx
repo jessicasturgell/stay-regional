@@ -1,13 +1,24 @@
+import { useEffect, useState } from "react";
+import { getAllResources } from "../services/resourceServices.jsx";
+
 export const KYResources = () => {
-  const resources = [
-    {
-      id: 1,
-      name: "EKY Mutual Aid",
-      description:
-        "An Appalachian community coming together to care for itself. we’re all we’ve got!",
-      url: "https://www.instagram.com/hillbillieshelpinghillbillies/",
-    },
-  ];
+  const [resources, setResources] = useState([]);
+
+  useEffect(() => {
+    const fetchKYResources = async () => {
+      try {
+        const allResources = await getAllResources();
+        const kyResources = allResources.filter(
+          (resource) => resource.state === "KY"
+        );
+        setResources(kyResources);
+      } catch (error) {
+        console.error("Error fetching resources:", error);
+      }
+    };
+
+    fetchKYResources();
+  }, []);
   return (
     <>
       {resources.map((r) => (
